@@ -1,0 +1,20 @@
+[
+  {
+    "type": "release",
+    "versionCode": 1180,
+    "versionName": "1.1.8",
+    "date": "2024.09.20",
+    "description": [
+      {
+        "lang": "en",
+        "text": "1. Fixe crashing during app startup\n2. Fix gyroscope not working properly\n3. Fix crashing when switching to night mode\n4. Use Pojav as the backend"
+      },
+      {
+        "lang": "zh_CN",
+        "text": "（若启动器内下载缓慢请使用网盘下载,64位的请下载arm64，不知道该下哪个的请下载all）\n1.修复应用启动时有概率闪退的bug\n2.修复陀螺仪无法正常工作的bug\n3.修复切换夜间模式闪退的bug\n4.使用Pojav作为启动器后端"
+      }
+    ],
+    "netdiskUrl": "https://pan.quark.cn/s/78f980d00971",
+    "url": "https://github.com/FCL-Team/FoldCraftLauncher/releases/download/1.1.8/FCL-release-1.1.8-all.apk"
+  }
+]

@@ -1,0 +1,36 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class JavaFixes {
+
+    public static void main(String[] args) {
+        // Java 8 features
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David");
+
+        // Using lambda expressions to iterate over the list
+        names.forEach(name -> System.out.println("Hello, " + name));
+
+        // Using streams to filter names starting with 'A' and collect them into a new list
+        List<String> filteredNames = names.stream()
+                .filter(name -> name.startsWith("A"))
+                .collect(Collectors.toList());
+        System.out.println("Filtered names: " + filteredNames);
+
+        // Java 17 features
+        String input = "Hello, World!";
+
+        // Using pattern matching to check if input is a String
+        if (input instanceof String str) {
+            System.out.println("Input is a String: " + str);
+
+            // Using switch expression to process different cases
+            String result = switch (str) {
+                case "Hello, World!" -> "Greeting received";
+                case "Goodbye, World!" -> "Farewell received";
+                default -> "Unknown message";
+            };
+            System.out.println("Result: " + result);
+        }
+    }
+}
